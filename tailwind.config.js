@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         dark: "url('/images/dark.jpg')",
         light: "url('/images/light.jpg')",
+        plain: "url('/images/plain_l.jpg')",
       },
     },
   },

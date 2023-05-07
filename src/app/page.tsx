@@ -12,7 +12,7 @@ export default function Home() {
 
 
   return (
-    <main className="items-center w-full min-h-screen bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <main className="items-center w-full h-screen bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <img src='./logo_d.png' alt=''/>
       <div className='px-32 py-10'>
         <nav className='flex justify-between items-center'>
@@ -28,10 +28,10 @@ export default function Home() {
               setBackgroundImage(backgroundImage === '/images/light.jpg' ? '/images/dark.jpg' : '/images/light.jpg')
               setLogo(logo === './logo_l.png' ? './logo_d.png' : './logo_l.png')
               setTextColor(textColor === '#413E53' ? '#fff' : '#413E53')
-              }} className='rounded-[10px] font-primary font-semibold py-4 px-4 bg-[#D8D9DB]'>
+              }} className='rounded-[10px] hover:bg-[#cfd2d7] font-primary font-semibold py-4 px-4 bg-[#D8D9DB]'>
               <BsFillMoonFill className='text-primary' />
             </button>
-            <button className='rounded-[10px] px-4 py-2 hover:py-1 font-primary font-semibold bg-[#D8D9DB]'>Login</button>
+            <button className='rounded-[10px] px-4 py-2 hover:bg-[#cfd2d7] font-primary font-semibold bg-[#D8D9DB]'>Login</button>
             <button className='btn'>Sign Up</button>
           </div>
         </nav>
